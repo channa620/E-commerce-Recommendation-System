@@ -8,8 +8,11 @@ Flask-based e-commerce web application with real-time product recommendations us
             Same category items
 
 🧾 Dynamic Cart Management – Add or remove items from the shopping cart with instant recommendation updates.
+
 🖼️ Image Handling – Supports local images; generates placeholder images automatically for missing ones.
+
 📂 CSV-Driven Catalog – Product data is stored in a CSV file for easy updates.
+
 💻 User-Friendly Web Interface – Built with Flask, HTML, CSS, and JavaScript.
 
 Files created:
