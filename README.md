@@ -11,13 +11,12 @@ Flask-based e-commerce web application with real-time product recommendations us
 
 🛍️ Smart Recommendations – Personalized product suggestions based on:
 
-Items in cart
+   **Items in cart
 
-Related products from dataset
+   **Related products from dataset
 
-Same category items
+   **Same category items
 
-Popular fallback products
 
 🧾 Dynamic Cart Management – Add or remove items from the shopping cart with instant recommendation updates.
 
