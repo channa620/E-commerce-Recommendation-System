@@ -3,8 +3,9 @@ Flask-based e-commerce web application with real-time product recommendations us
 
 🚀 Features
 
-   🔍 Search & Browse – Find products by name or category.
-    🛍️ Smart Recommendations – Personalized product suggestions based on:
+🔍 Search & Browse – Find products by name or category.
+
+🛍️ Smart Recommendations – Personalized product suggestions based on:
             Items in cart
             Related products from dataset
             Same category items
@@ -16,6 +17,7 @@ Flask-based e-commerce web application with real-time product recommendations us
 📂 CSV-Driven Catalog – Product data is stored in a CSV file for easy updates.
 
 💻 User-Friendly Web Interface – Built with Flask, HTML, CSS, and JavaScript.
+
 
 Files created:
 - app.py                : Flask application
