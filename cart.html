@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>Your Cart</h3>
+{% if items %}
+  <div class="list-group mb-4">
+    {% for it in items %}
+      <div class="list-group-item">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ it.product_name }}</h5>
+          <form method="post" action="{{ url_for('remove_from_cart', product_id=it.product_id) }}">
+            <div class="row">
+            <button class="btn btn-danger btn-sm">Remove</button>
+          </form>
+        </div>
+        <p class="mb-1">{{ it.category }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <h5>Recommendations</h5>
+  <div class="row">
+    {% for r in recommendations %}
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="{{ r.image }}" class="card-img-top product-img" alt="{{ r.product_name }}">
+          <div class="card-body">
+            <h6>{{ r.product_name }}</h6>
+            <form method="post" action="{{ url_for('add_to_cart', product_id=r.product_id) }}">
+              <button class="btn btn-primary btn-sm">Add to cart</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>Your cart is empty.</p>
+{% endif %}
+{% endblock %}
